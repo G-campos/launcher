@@ -27,7 +27,7 @@ func main() {
 func makeTray(a fyne.App) {
 	if desk, ok := a.(desktop.App); ok {
 		h := fyne.NewMenuItem("Hello", func() {})
-		h.Icon = theme.HomeIcon()
+		h.Icon = theme.MenuIcon()
 		menu := fyne.NewMenu("Hello World", h)
 		h.Action = func() {
 			log.Println("System tray menu tapped")
